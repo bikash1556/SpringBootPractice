@@ -61,7 +61,7 @@ public class DepartmentServiceImpl implements DepartmentService{
         depDB.setDepartmentCode(
             department.getDepartmentCode());
     }
-
+log.info("Inside ServiceImpl for Update Opertaion of departement");
     return departmentRepository.save(depDB);
 	}
 
