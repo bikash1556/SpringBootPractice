@@ -3,18 +3,18 @@ package com.example.demo.service;
 import java.util.List;
 import java.util.Objects;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 import com.example.demo.entity.Department;
 import com.example.demo.repository.DepartmentRepo;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Service
+@Slf4j
 public class DepartmentServiceImpl implements DepartmentService{
-	Logger log=LoggerFactory.getLogger(DepartmentServiceImpl.class);
+	
 	 @Autowired
 	    private DepartmentRepo departmentRepository;
 	@Override
